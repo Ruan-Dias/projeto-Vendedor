@@ -10,7 +10,7 @@ class Vendedor:
 
 
 nome_vendedor = "Ruan Luiz"
-produto_vendido = "iPhone 11 Pro Max"
+produto_vendido = "Placa de video"
 
 Vendedor.mostrar_nome(nome_vendedor)
 Vendedor.mostrar_produto(produto_vendido)
