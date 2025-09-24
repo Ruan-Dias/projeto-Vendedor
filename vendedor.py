@@ -1,17 +1,25 @@
 class Vendedor:
-    def mostrar_nome(nome):
-        print(f"O nome do vendedor é: {nome}")
+    def definir_nome(self, nome):
+        self.nome = nome
 
-    def mostrar_produto(produto):
-        print(f"O produto vendido é: {produto}")
+    def definir_produto(self, produto):
+        self.produto = produto
 
-    def mostrar_tudo(nome, produto):
-        print(f"O vendedor {nome} está vendendo {produto}")
+    def mostrar_nome(self):
+        print(f"O nome do vendedor é: {self.nome}")
+
+    def mostrar_produto(self):
+        print(f"O produto vendido é: {self.produto}")
+
+    def mostrar_tudo(self):
+        print(f"O vendedor {self.nome} está vendendo {self.produto}")
 
 
-nome_vendedor = "Ruan Luiz"
-produto_vendido = "Placa de video"
+vendedor1 = Vendedor()
 
-Vendedor.mostrar_nome(nome_vendedor)
-Vendedor.mostrar_produto(produto_vendido)
-Vendedor.mostrar_tudo(nome_vendedor, produto_vendido)
+vendedor1.definir_nome("Ruan Luiz")
+vendedor1.definir_produto("Placa de vídeo")
+
+vendedor1.mostrar_nome()
+vendedor1.mostrar_produto()
+vendedor1.mostrar_tudo()
