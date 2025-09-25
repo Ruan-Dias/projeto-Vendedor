@@ -11,7 +11,7 @@ class Vendedor:
     def mostrar_produto(self):
         print(f"O produto vendido é: {self.produto}")
 
-    def mostrar_tudo(self):
+    def mostrar_venda(self):
         print(f"O vendedor {self.nome} está vendendo {self.produto}")
 
 
@@ -22,4 +22,4 @@ vendedor1.definir_produto("Placa de vídeo")
 
 vendedor1.mostrar_nome()
 vendedor1.mostrar_produto()
-vendedor1.mostrar_tudo()
+vendedor1.mostrar_venda()
